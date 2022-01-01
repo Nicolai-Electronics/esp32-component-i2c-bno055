@@ -2,7 +2,7 @@
 
 An ESP-IDF component for using the BNO055 sensor over I2C. This library is based on the [Adafruit_BNO055](https://github.com/adafruit/Adafruit_BNO055) Arduino library.
 
-This component depends on the [I2C bus](https://github.com/Nicolai-Electronics/esp32-component-bus-i2c) component which implements wrappers for 
+This component depends on the [I2C bus](https://github.com/Nicolai-Electronics/esp32-component-bus-i2c) component which implements wrappers for I2C bus transactions.
 
 ## Getting started
 
