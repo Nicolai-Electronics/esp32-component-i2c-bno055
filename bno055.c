@@ -174,7 +174,7 @@ esp_err_t bno055_get_vector(BNO055* device, bno055_vector_type_t vector_type, bn
     if (res != ESP_OK) return res;
 
     uint8_t buffer[6];
-    res = i2c_read_reg(device->i2c_bus, device->i2c_address, vector_type, (uint8_t*) &buffer, 6);
+    res = i2c_read_reg(device->i2c_bus, device->i2c_address, vector_type, buffer, 6);
     if (res != ESP_OK) return res;
     
     int16_t x = ((int16_t) buffer[0]) | (((int16_t) buffer[1]) << 8);
